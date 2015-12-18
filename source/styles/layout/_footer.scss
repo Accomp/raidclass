@@ -1,0 +1,9 @@
+//
+// Layout: Footer
+// --------------------------------------------------
+
+.l-footer {
+  background: rgba(map-get($colors, base-1), .9);
+  border-top: 1px solid map-get($colors, base-1);
+  padding: 10px 0;
+} // .l-footer

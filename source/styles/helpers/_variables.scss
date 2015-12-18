@@ -1,0 +1,67 @@
+////
+/// Global variables
+/// @group Globals
+/// @author Eric Taylor
+////
+
+/// Variable map: Horizontal breakpoints
+/// ---
+/// @type Map
+/// ---
+/// @prop {Map} Breakpoints
+/// @prop {Number} tiny [400px] - Tiny
+/// @prop {Number} small [600px] - Small
+/// @prop {Number} medium [1025px] - Medium
+/// @prop {Number} large [1400px] - Large
+/// @prop {Number} huge [1600px] - Huge
+
+$breakpoints: (
+  tiny: 480px,
+  small: 640px,
+  medium: 768px,
+  large: 1024px,
+  huge: 1400px
+);
+
+
+/// Variable map: Colors
+/// ---
+/// @type Map
+/// ---
+/// @prop {String} colors.1 [#333] - 1
+
+$colors: (
+  black: #000,
+  white: #fff,
+  base-1: #15161f,
+  base-2: #2f485b,
+  base-3: #323947,
+  base-4: #c4c9ce,
+  base-5: #212930,
+  accent-1: #058894,
+  accent-2: #e68d35,
+  accent-3: #09aa64,
+  class-death-knight: #850111,
+  class-demon-hunter: #3ea123,
+  class-druid: #ab4f03,
+  class-hunter: #6d9c33,
+  class-mage: #69ccf0,
+  class-monk: #00ff96,
+  class-paladin: #b34677,
+  class-priest: #fff,
+  class-rogue: #e3d320,
+  class-shaman: #0031b8,
+  class-warlock: #584391,
+  class-warrior: #94672f,
+);
+
+
+/// Variable map: Spacing
+/// ---
+/// @type Map
+/// ---
+/// @prop {String} spacing.small [15px] - Small
+
+$spacing: (
+  small: 14px
+);

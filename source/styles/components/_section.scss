@@ -1,0 +1,20 @@
+//
+// Component: Section
+// --------------------------------------------------
+
+.c-section {
+
+  &--content {
+    background: map-get($colors, white);
+    border-radius: 3px;
+    padding: map-get($spacing, small);
+  } // &--content
+
+  &--feature {
+
+  } //&--feature
+
+  &--ad {
+
+  } //&--ad
+} // .c-section

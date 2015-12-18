@@ -1,0 +1,15 @@
+//
+// Theme: Class
+// --------------------------------------------------
+
+.t-class {
+
+  &--rogue {
+    .c-spec-navigation__class {
+      color: rgba(map-get($colors, class-rogue), .8);
+    } // .c-spec-navigation__class
+    .c-category-navigation {
+      background-color: rgba(map-get($colors, class-rogue), .8);
+    } // .c-category-navigation
+  } // .&--rogue
+} // .t-class

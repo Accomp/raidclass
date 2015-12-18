@@ -1,0 +1,116 @@
+//
+// Component: Site Navigation
+// --------------------------------------------------
+
+.c-spec-navigation {
+
+  display: none;
+
+  @include mq(medium) {
+    background: rgba(map-get($colors, base-5), .9);
+    border: 1px solid map-get($colors, base-1);
+    border-width: 0 1px;
+    bottom: 0;
+    display: block;
+    left: map-get($spacing, small);
+    overflow: scroll;
+    position: fixed;
+    top: 61px;
+    width: 200px;
+    z-index: 10;
+  } // mq.medium
+
+  @include mq(large) {
+    left: 0;
+    margin: 0 auto;
+    right: 796px;
+  } // mq.large
+
+  .c-spec-navigation__class {
+    font-size: .9em;
+    margin: 0;
+    padding: 20px map-get($spacing, small);
+    text-align: center;
+    text-transform: uppercase;
+  } // .c-spec-navigation__class
+
+  .c-spec-navigation__class-spec {
+    border: 1px solid map-get($colors, base-1);
+    border-width: 1px 0;
+    display: block;
+    font-size: 1.6em;
+    margin: 3px 0 0;
+    padding: 5px 0;
+  } // .c-spec-navigation__class
+
+  .c-spec-navigation__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } // .c-spec-navigation__list
+
+  .c-spec-navigation__list-item {
+
+    @include mq(medium) {
+      border-left: 5px solid map-get($colors, base-1);
+      border-top: 1px solid map-get($colors, base-1);
+      margin: 0;
+    } // mq.medium
+
+    &:last-child {
+
+      @include mq(medium) {
+        border-bottom: 1px solid map-get($colors, base-2);
+      } // mq.medium
+
+      .c-spec-navigation__link {
+
+        @include mq(medium) {
+          border-bottom: 1px solid map-get($colors, base-1);
+        } // .mq-medium
+      } // .c-spec-navigation__link
+    } // &:last-child
+
+    &--create {
+
+      @include mq(medium) {
+        border-left-color: map-get($colors, accent-1);
+      } // mq.medium
+    } // .&--create
+
+    &--discover {
+
+      @include mq(medium) {
+        border-left-color: map-get($colors, accent-2);
+      } // mq.medium
+    } // .&--discover
+  } // .c-spec-navigation__list-item
+
+  .c-spec-navigation__link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include mq(medium) {
+      border-top: 1px solid map-get($colors, base-2);
+      color: map-get($colors, base-4);
+      display: block;
+      padding: 15px 5px;
+      text-align: center;
+    } // mq.medium
+  } // .c-spec-navigation__link
+
+  .c-spec-navigation__toggle {
+    @extend %u-image-replacement;
+    background: map-get($colors, base-5);
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 40px;
+
+    @include mq(medium) {
+      display: none;
+    } // mq.medium
+  } // .c-spec-navigation__toggle
+} // .c-spec-navigation

@@ -1,0 +1,25 @@
+//
+// Layout: Header
+// --------------------------------------------------
+
+.l-header {
+  height: 80px;
+
+  @include mq(medium) {
+    height: 60px;
+  } // mq.medium
+
+  .l-header__heading {
+    @extend %u-visually-hidden;
+  } //.l-header__heading
+
+  .l-header__sticky {
+    background: rgba(map-get($colors, base-1), .9);
+    border-bottom: 1px solid map-get($colors, base-1);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  } // .l-header__sticky
+} // .l-header

@@ -1,0 +1,50 @@
+//
+// Component: Network Navigation
+// --------------------------------------------------
+
+.c-network-navigation {
+  float: left;
+
+  @include mq(medium) {
+    border-left: 1px solid map-get($colors, base-1);
+  } // mq.medium
+
+  .c-network-navigation__heading {
+    @extend %u-visually-hidden;
+  } // .c-network-navigation__heading
+
+  .c-network-navigation__list {
+    @include clearfix();
+    margin: 0;
+    padding: 0;
+  } // .c-network-navigation__list
+
+  .c-network-navigation__list-item {
+    margin: 0;
+
+    @include mq(medium) {
+      border-right: 1px solid map-get($colors, base-1);
+      float: left;
+      width: 199px;
+    } // mq.medium
+  } // .c-network-navigation__list-item
+
+  .c-network-navigation__link {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0;
+    text-decoration: none;
+    transition: opacity .4s;
+
+    @include mq(medium) {
+      line-height: 60px;
+      text-align: center;
+    } // mq.medium
+
+    &:hover {
+      opacity: 1;
+    } // &:hover
+  } // .c-network-navigation__link
+} // .c-network-navigation

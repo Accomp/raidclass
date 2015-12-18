@@ -1,0 +1,105 @@
+////
+/// Global mixins
+/// @group Globals
+/// @author Eric Taylor
+////
+
+/// Create media query above horizontal breakpoint
+/// ---
+/// @require {variable} $breakpoints - Breakpoints variable map
+/// @param {String} $breakpoint - Horizontal breakpoint
+/// ---
+/// @example scss - Usage
+///   selector {
+///     @include mq("$breakpoint") {
+///       property: value;
+///     }
+///   }
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == tiny {
+    @media (min-width: map-get($breakpoints, tiny)) { @content; }
+  } @else if $breakpoint == small {
+    @media (min-width: map-get($breakpoints, small)) { @content; }
+  } @else if $breakpoint == medium {
+    @media (min-width: map-get($breakpoints, medium)) { @content; }
+  } @else if $breakpoint == large {
+    @media (min-width: map-get($breakpoints, large)) { @content; }
+  } @else if $breakpoint == huge {
+    @media (min-width: map-get($breakpoints, huge)) { @content; }
+  }
+}
+
+
+/// Create media query for high density displays
+/// ---
+/// @example scss - Usage
+///   selector {
+///     background-image: url("/path/file.png");
+///
+///     @mixin media-hd() {
+///       background-image: url("/path/file@2x.png");
+///     }
+///   }
+
+@mixin media-hd() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+
+/// Create media query for ultra high density displays
+/// ---
+/// @example scss - Usage
+///   selector {
+///     background-image: url("/path/file.png");
+///
+///     @mixin media-hd() {
+///       background-image: url("/path/file@3x.png");
+///     }
+///   }
+
+@mixin media-uhd() {
+  @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+
+/// Add clearfix to element with floating children
+/// ---
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/
+/// ---
+/// @example scss - Usage
+///   selector {
+///     @include clearfix();
+///   }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+/// Style buttons
+/// ---
+/// @author Eric Taylor
+/// ---
+/// @example scss - Usage
+///   selector {
+///     @include button();
+///   }
+
+@mixin button() {
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+}

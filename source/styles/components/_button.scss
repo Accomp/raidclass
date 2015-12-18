@@ -1,0 +1,18 @@
+//
+// Component: Button
+// --------------------------------------------------
+
+.c-button {
+  @include button();
+} // .c-button
+
+
+//
+// Component: Button
+// Modifier: Full
+// --------------------------------------------------
+
+.c-button--full {
+  display: block;
+  width: 100%;
+} // .c-button--full

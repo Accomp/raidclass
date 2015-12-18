@@ -1,0 +1,117 @@
+//
+// Component: Results
+// --------------------------------------------------
+
+.c-results {
+
+  .c-results__heading {
+    @extend %u-visually-hidden;
+  } // .c-results__heading
+
+  .c-results__sort {
+    background-color: map-get($colors, base-5);
+    margin: 0 0 15px;
+    text-align: center;
+  } // .c-results__sort
+
+  .c-results__sort-list {
+    margin: 0;
+    padding: 0;
+  } // .c-results__sort-list
+
+  .c-results__sort-item {
+    display: inline-block;
+    margin: 0 5%;
+    width: 25%;
+  } // .c-results__sort-item
+
+  .c-results__sort-link {
+    line-height: 45px;
+  } // .c-results__sort-link
+
+  .c-results__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } // .c-results__list
+
+  .c-results__list-item,
+  .c-results__list-item--grid-sizer {
+    margin: 0 0 3%;
+    width: 48.5%;
+
+    @include mq(small) {
+      margin-bottom: 2%;
+      width: 32%;
+    } // mq.small
+  } // .c-results__list-item
+
+  .c-results__list-item--featured {
+    width: 100%;
+
+    @include mq(small) {
+      width: 64%;
+    } // mq.small
+  } // .c-results__list-item--featured
+
+  .c-results__list-item--gutter-sizer {
+    margin: 0;
+    width: 3%;
+
+    @include mq(small) {
+      width: 2%;
+    } // mq.small
+  } // .c-results__list-item--gutter-sizer
+
+  .c-results__container {
+    border: 1px solid map-get($colors, base-4);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+
+    &:hover {
+
+      .c-results__info {
+
+        @include mq(medium) {
+          opacity: .75;
+        } // mq.medium
+      } // .c-results__info
+    } // &:hover
+  } // .c-results__container
+
+  .c-results__info {
+    background: map-get($colors, base-4);
+    color: map-get($colors, base-1);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity .4s;
+  } // .c-results__info
+
+  .c-results__title {
+  } // .c-results_-title
+
+  .c-results__meta {
+    @include clearfix();
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } // .c-results__meta
+
+  .c-results__author {
+    display: none;
+
+    @include mq(medium) {
+      display: inline-block;
+      margin: 5px 0 0 7px;
+    } // mq.medium
+  } // .c-results__author
+} // .c-results
