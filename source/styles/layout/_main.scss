@@ -3,6 +3,10 @@
 // --------------------------------------------------
 
 .l-main {
-  padding: 15px 0;
+  padding: (40px + map-get($spacing, small)) 0 0;
   position: relative;
+
+  @include mq(medium) {
+    padding-top: (60px + map-get($spacing, small));
+  } // mq.medium
 } // .l-main

@@ -2,14 +2,34 @@
 // Theme: Class
 // --------------------------------------------------
 
+// scss-lint:disable all
 .t-class {
 
   &--rogue {
+    .c-category-navigation__heading {
+      color: darken(map-get($colors, class-rogue), 30%);
+    } // .c-category-navigation__heading
     .c-spec-navigation__class {
       color: rgba(map-get($colors, class-rogue), .8);
     } // .c-spec-navigation__class
     .c-category-navigation {
       background-color: rgba(map-get($colors, class-rogue), .8);
     } // .c-category-navigation
+    .fancy-select {
+      .options {
+        background: map-get($colors, class-rogue);
+        border-color: darken(map-get($colors, class-rogue), 30%);
+
+        li {
+          color: darken(map-get($colors, class-rogue), 30%);
+
+          &.selected {
+            background-color: darken(map-get($colors, class-rogue), 30%);
+            color: map-get($colors, white);
+          }
+        } // li
+      } // .options
+    } // .fancy-select
   } // .&--rogue
 } // .t-class
+// scss-lint:enable all

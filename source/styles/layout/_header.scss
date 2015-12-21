@@ -3,23 +3,41 @@
 // --------------------------------------------------
 
 .l-header {
-  height: 80px;
+  @include clearfix();
+  background: rgba(map-get($colors, base-1), .9);
+  border-bottom: 1px solid map-get($colors, base-1);
+  height: 40px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 
   @include mq(medium) {
     height: 60px;
+    position: absolute;
   } // mq.medium
 
   .l-header__heading {
-    @extend %u-visually-hidden;
+    color: map-get($colors, white);
+    float: left;
+    font-size: 1.6em;
+    line-height: 39px;
+    margin: 0;
+
+    @include mq(medium) {
+      font-size: 1.5em;
+      line-height: 59px;
+      position: fixed;
+    } // mq.medium
   } //.l-header__heading
 
-  .l-header__sticky {
-    background: rgba(map-get($colors, base-1), .9);
-    border-bottom: 1px solid map-get($colors, base-1);
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10;
-  } // .l-header__sticky
+  .l-header__heading-link {
+    display: block;
+    text-decoration: none;
+
+    @include mq(medium) {
+      text-align: center;
+      width: 200px;
+    } // mq.medium
+  } // .l-header__heading-link
 } // .l-header

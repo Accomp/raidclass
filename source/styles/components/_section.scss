@@ -7,6 +7,7 @@
   &--content {
     background: map-get($colors, white);
     border-radius: 3px;
+    margin-bottom: map-get($spacing, small);
     padding: map-get($spacing, small);
   } // &--content
 
@@ -17,4 +18,16 @@
   &--ad {
 
   } //&--ad
+
+  *:first-child {
+    margin-top: 0;
+  } // *:first-child
+
+  .c-section__heading {
+    font-family: map-get($fonts, base-1);
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  } // .c-section__heading
 } // .c-section

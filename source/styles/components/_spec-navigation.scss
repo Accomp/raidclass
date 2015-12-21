@@ -4,20 +4,17 @@
 
 .c-spec-navigation {
 
-  display: none;
-
   @include mq(medium) {
     background: rgba(map-get($colors, base-5), .9);
     border: 1px solid map-get($colors, base-1);
     border-width: 0 1px;
     bottom: 0;
-    display: block;
     left: map-get($spacing, small);
-    overflow: scroll;
+    padding-top: 60px;
     position: fixed;
-    top: 61px;
+    top: 0;
     width: 200px;
-    z-index: 10;
+    z-index: 5;
   } // mq.medium
 
   @include mq(large) {
@@ -27,26 +24,36 @@
   } // mq.large
 
   .c-spec-navigation__class {
-    font-size: .9em;
-    margin: 0;
-    padding: 20px map-get($spacing, small);
-    text-align: center;
-    text-transform: uppercase;
-  } // .c-spec-navigation__class
-
-  .c-spec-navigation__class-spec {
     border: 1px solid map-get($colors, base-1);
     border-width: 1px 0;
-    display: block;
-    font-size: 1.6em;
-    margin: 3px 0 0;
-    padding: 5px 0;
+    font-family: map-get($fonts, base-1);
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 6px 0 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mq(medium) {
+      font-size: 1.4em;
+      margin: 35px map-get($spacing, small) 21px;
+    } // mq.medium
   } // .c-spec-navigation__class
 
+  .c-spec-navigation__class-name {
+    @extend %u-visually-hidden;
+  } // .c-spec-navigation__class-name
+
   .c-spec-navigation__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: none;
+
+    @include mq(medium) {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    } // mq.medium
   } // .c-spec-navigation__list
 
   .c-spec-navigation__list-item {
@@ -84,19 +91,46 @@
         border-left-color: map-get($colors, accent-2);
       } // mq.medium
     } // .&--discover
+
+    &.is-current {
+
+      .c-spec-navigation__link {
+        background: lighten(map-get($colors, base-5), 10%);
+        position: relative;
+
+        &:after {
+          border-bottom: 12px solid transparent;
+          border-right: 15px solid map-get($colors, base-1);
+          border-top: 12px solid transparent;
+          content: "";
+          display: block;
+          height: 0;
+          margin-top: -12px;
+          right: 0;
+          position: absolute;
+          top: 50%;
+          width: 0;
+        } // &:after
+      } // .c-spec-navigation__link
+    } // &.is-current
   } // .c-spec-navigation__list-item
 
   .c-spec-navigation__link {
-    text-decoration: none;
-    text-transform: uppercase;
 
     @include mq(medium) {
+      @include transition(background-color .4s ease-in-out);
       border-top: 1px solid map-get($colors, base-2);
       color: map-get($colors, base-4);
       display: block;
       padding: 15px 5px;
       text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
     } // mq.medium
+
+    &:hover {
+      background: lighten(map-get($colors, base-5), 10%);
+    } // &:hover
   } // .c-spec-navigation__link
 
   .c-spec-navigation__toggle {

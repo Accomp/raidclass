@@ -21,13 +21,15 @@ var options = minimist(process.argv.slice(2), {
 // Task
 gulp.task('views', function() {
 
-  return gulp.src('./source/views/*')
+  return gulp.src('./source/views/**/*')
 
+    /*
     // Lint HTML
     .pipe(htmlhint({
       htmlhintrc: './gulp_tasks/_html-lint.json'
     }))
     .pipe(htmlhint.reporter())
+    */
 
     // Save optimized HTML
     .pipe(gulp.dest('./build/'));

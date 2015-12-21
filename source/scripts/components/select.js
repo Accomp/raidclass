@@ -1,11 +1,11 @@
 //
-// Component: Scrollbar
+// Component: Fancy Select
 // --------------------------------------------------
 
 ;(function($, window, document, undefined) {
 
   'use strict';
-  $('.c-spec-navigation').perfectScrollbar({
+  $('.js-fancy-select').fancySelect({
   });
 
 })(jQuery, window, document);

@@ -23,6 +23,16 @@ $breakpoints: (
   huge: 1400px
 );
 
+/// Variable map: Fonts
+/// ---
+/// @type Map
+/// ---
+/// @prop {String} fonts
+
+$fonts: (
+  base-1: "Josefin Sans",
+  base-2: "Indie Flower"
+);
 
 /// Variable map: Colors
 /// ---
@@ -52,7 +62,7 @@ $colors: (
   class-rogue: #e3d320,
   class-shaman: #0031b8,
   class-warlock: #584391,
-  class-warrior: #94672f,
+  class-warrior: #94672f
 );
 
 

@@ -5,34 +5,39 @@
 .c-category-navigation {
   border: 1px solid map-get($colors, base-5);
   border-width: 1px 0;
-  margin: 0 0 15px;
-  padding: 10px 0;
+  margin: 0 0 map-get($spacing, small);
+  padding: 5px 0;
   text-align: center;
 
   @include mq(medium) {
+    padding: 10px 0;
     text-align: left;
   } // mq.medium
 
   .c-category-navigation__heading {
     color: map-get($colors, base-1);
-    margin: 0 map-get($spacing, small);
+    font-family: map-get($fonts, base-1);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 5px;
+    text-transform: uppercase;
 
     @include mq(medium) {
-      display: inline-block;
-      line-height: 56px;
-      vertical-align: top;
+      float: left;
+      font-size: 2.4em;
+      line-height: 58px;
+      margin: 0 20px 0 map-get($spacing, small);
     } // mq.medium
   } // .c-category-navigation__heading
 
   .c-category-navigation__list {
-    display: inline;
-    height: 40px;
     margin: 0;
     padding: 0;
     text-align: center;
 
     @include mq(medium) {
-      height: 56px;
+      @include clearfix();
+      float: left;
     } // mq.medium
   } // .c-category-navigation__list
 
@@ -40,11 +45,13 @@
     border: 1px solid map-get($colors, base-1);
     border-radius: 50%;
     display: inline-block;
-    margin: 0 1px;
+    margin: 0 10px;
     overflow: hidden;
     transition: border-color .4s;
 
     @include mq(medium) {
+      display: block;
+      float: left;
       margin: 0 10px;
     } // mq.medium
 

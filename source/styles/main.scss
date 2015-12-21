@@ -1,3 +1,5 @@
+@import "helpers/variables";
+
 //
 // Vendors
 // --------------------------------------------------
@@ -5,13 +7,13 @@
 @import "vendors/bourbon/bourbon";
 @import "vendors/neat/neat";
 @import "vendors/perfect-scrollbar/perfect-scrollbar";
+@import "vendors/fancy-select/fancy-select";
 
 
 //
 // Helpers
 // --------------------------------------------------
 
-@import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/utilities";
 
@@ -39,7 +41,6 @@
 // --------------------------------------------------
 
 @import "components/button";
-@import "components/network-navigation";
 @import "components/category-navigation";
 @import "components/profile-control";
 @import "components/spec-navigation";
