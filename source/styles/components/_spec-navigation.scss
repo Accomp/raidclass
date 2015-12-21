@@ -10,11 +10,10 @@
     border-width: 0 1px;
     bottom: 0;
     left: map-get($spacing, small);
-    padding-top: 60px;
     position: fixed;
     top: 0;
     width: 200px;
-    z-index: 5;
+    z-index: 10;
   } // mq.medium
 
   @include mq(large) {
@@ -22,6 +21,21 @@
     margin: 0 auto;
     right: 796px;
   } // mq.large
+
+  .c-spec-navigation__logo {
+    display: none;
+
+    @include mq(medium) {
+      border-bottom: 1px solid map-get($colors, base-1);
+      display: block;
+      font-family: map-get($fonts, base-2);
+      font-size: 2.2em;
+      line-height: 56px;
+      padding-top: 3px;
+      text-align: center;
+      text-decoration: none;
+    } // mq.medium
+  } // .c-spec-navigation__logo
 
   .c-spec-navigation__class {
     border: 1px solid map-get($colors, base-1);
@@ -36,8 +50,9 @@
     text-transform: uppercase;
 
     @include mq(medium) {
-      font-size: 1.4em;
-      margin: 35px map-get($spacing, small) 21px;
+      font-size: 1.2em;
+      margin: 37px map-get($spacing, small) 21px;
+      padding-top: 8px;
     } // mq.medium
   } // .c-spec-navigation__class
 
@@ -100,13 +115,13 @@
 
         &:after {
           border-bottom: 12px solid transparent;
-          border-right: 15px solid map-get($colors, base-1);
+          border-left: 15px solid map-get($colors, base-1);
           border-top: 12px solid transparent;
           content: "";
           display: block;
           height: 0;
+          left: 0;
           margin-top: -12px;
-          right: 0;
           position: absolute;
           top: 50%;
           width: 0;
@@ -122,7 +137,8 @@
       border-top: 1px solid map-get($colors, base-2);
       color: map-get($colors, base-4);
       display: block;
-      padding: 15px 5px;
+      font-size: .85em;
+      padding: 17px 5px 13px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -148,3 +164,10 @@
     } // mq.medium
   } // .c-spec-navigation__toggle
 } // .c-spec-navigation
+
+.c-spec-navigation__select {
+
+  @include mq(medium) {
+    display: none;
+  } // mq.medium
+} // .c-spec-navigation__select

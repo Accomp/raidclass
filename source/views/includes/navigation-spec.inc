@@ -1,4 +1,5 @@
 <nav class="c-spec-navigation">
+  <a href="" title="" class="c-spec-navigation__logo">Raid Class</a>
   <h1 class="c-spec-navigation__class">Outlaw<span class="c-spec-navigation__class-name"> Rogue</span></h1>
   <ul class="c-spec-navigation__list">
     <li class="c-spec-navigation__list-item c-spec-navigation__list-item--overview is-current">

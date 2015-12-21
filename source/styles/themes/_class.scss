@@ -7,7 +7,7 @@
 
   &--rogue {
     .c-category-navigation__heading {
-      color: darken(map-get($colors, class-rogue), 30%);
+      color: map-get($colors, class-rogue--dark);
     } // .c-category-navigation__heading
     .c-spec-navigation__class {
       color: rgba(map-get($colors, class-rogue), .8);
@@ -18,18 +18,28 @@
     .fancy-select {
       .options {
         background: map-get($colors, class-rogue);
-        border-color: darken(map-get($colors, class-rogue), 30%);
+        border-color: map-get($colors, class-rogue--dark);
 
         li {
-          color: darken(map-get($colors, class-rogue), 30%);
+          color: map-get($colors, class-rogue--dark);
 
           &.selected {
-            background-color: darken(map-get($colors, class-rogue), 30%);
+            background-color: map-get($colors, class-rogue--dark);
             color: map-get($colors, white);
           }
         } // li
       } // .options
     } // .fancy-select
+    .c-section {
+
+      a {
+        color: map-get($colors, class-rogue--dark);
+
+        &:hover {
+          color: map-get($colors, class-rogue);
+        } // &:hover
+      } // a
+    } // .c-section
   } // .&--rogue
 } // .t-class
 // scss-lint:enable all

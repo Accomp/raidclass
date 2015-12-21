@@ -52,17 +52,29 @@ $colors: (
   accent-2: #e68d35,
   accent-3: #09aa64,
   class-death-knight: #850111,
+  class-death-knight--dark: darken(#850111, 30%),
   class-demon-hunter: #3ea123,
+  class-demon-hunter--dark: darken(#3ea123, 30%),
   class-druid: #ab4f03,
+  class-druid--dark: darken(#ab4f03, 30%),
   class-hunter: #6d9c33,
+  class-hunter--dark: darken(#6d9c33, 30%),
   class-mage: #69ccf0,
+  class-mage--dark: darken(#69ccf0, 30%),
   class-monk: #00ff96,
+  class-monk--dark: darken(#00ff96, 30%),
   class-paladin: #b34677,
+  class-paladin--dark: darken(#b34677, 30%),
   class-priest: #fff,
+  class-priest--dark: darken(#fff, 30%),
   class-rogue: #e3d320,
+  class-rogue--dark: darken(#e3d320, 30%),
   class-shaman: #0031b8,
+  class-shaman--dark: darken(#0031b8, 30%),
   class-warlock: #584391,
-  class-warrior: #94672f
+  class-warlock--dark: darken(#584391, 30%),
+  class-warrior: #94672f,
+  class-warrior--dark: darken(#94672f, 30%)
 );
 
 

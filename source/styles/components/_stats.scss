@@ -1,0 +1,40 @@
+//
+// Component: Stats
+// --------------------------------------------------
+
+.c-stats {
+
+  .c-stats__list {
+    list-style: none;
+    padding: 0;
+  } // .c-stats__list
+
+  .c-stats__list-item {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding-right: 15px;
+    position: relative;
+
+    &.is-greater {
+
+      &:after {
+        content: ">";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      } // &:after
+    } // &.is-greater
+
+    &.is-equal {
+
+      &:after {
+        content: "=";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      } // &:after
+    } // &.is-equal
+  } // .c-stats__list-item
+} // .c-stats

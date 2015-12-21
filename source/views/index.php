@@ -14,12 +14,12 @@
 
           <?php include 'includes/navigation-spec.inc' ?>
 
-          <section class="c-section c-section--content">
-            <?php include 'content/stats.php' ?>
+          <section class="c-section c-section--content c-overview">
+            <?php include 'content/overview.php' ?>
           </section><!-- /.c-section -->
 
-          <section class="c-section c-section--content">
-            <?php include 'content/scaffold.php' ?>
+          <section class="c-section c-section--content c-stats">
+            <?php include 'content/stats.php' ?>
           </section><!-- /.c-section -->
 
         </div><!-- /.u-wrapper -->

@@ -13,19 +13,28 @@ body {
   text-rendering: optimizeSpeed;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  @include mq(medium) {
+    font-size: 16px;
+  } // mq.medium
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: map-get($colors, base-5);
-  font-family: map-get($fonts, base-2);
+  font-family: map-get($fonts, base-1);
   margin: 1em 0 .5em;
 }
 
 h1 {
-  font-size: 2.143em; // 14 > 30
+  font-family: map-get($fonts, base-1);
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 h2 {
+  font-family: map-get($fonts, base-2);
   font-size: 1.857em; // 14 > 26
   position: relative;
 
@@ -43,14 +52,17 @@ h2 {
 
 h3 {
   font-size: 1.571em; // 14 > 22
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.428em; // 14 > 20
+  font-size: 1em; // 14 > 14
+  text-transform: uppercase;
 }
 
 h5 {
-  font-size: 1.286em; // 14 > 18
+  font-size: 1em; // 14 > 14
+  text-transform: uppercase;
 }
 
 h6 {
@@ -72,7 +84,12 @@ strong, b {
 // scss-lint:lint:enable SelectorFormat, SingleLinePerSelector
 
 a {
+  @include transition(color .3s ease-in-out);
   color: map-get($colors, base-4);
+
+  &:hover {
+    color: lighten(map-get($colors, base-4), 30%);
+  }
 }
 
 img {

@@ -1,10 +1,8 @@
 <h1>Scaffolding</h1>
 <p>This page is intended to serve as a reference for base scaffolding, showing the foundational styles for each of the listed elements. If an element is not listed here, it will fall back to the default &ldquo;reset&rdquo; styles.</p>
-<h2>Content Elements</h2>
-<h3>Headings</h3>
-<h4>This is a heading 4</h4>
-<h5>This is a heading 5</h5>
-<h6>This is a heading 6</h6>
+<h2>Heading</h2>
+<h3>Sub-heading</h3>
+<h4>Tertiary heading</h4>
 <p>Lorem ipsum dolor sit amet, <a href="" title="">consectetur adipiscing</a> elit. Pellentesque sed ligula vitae nunc convallis tincidunt. Nullam justo justo, <strong>vehicula non laoreet in</strong>, iaculis id enim. Etiam elementum, felis ac euismod porttitor, orci nibh malesuada lectus, eget suscipit quam dui id lectus. <em>Nunc non elementum purus</em>. Integer vel magna facilisis, fermentum massa eu, elementum sapien.</p>
 <p>In hac habitasse platea dictumst. Aenean ac erat quis sapien ullamcorper accumsan ac eget ante. Etiam placerat efficitur nisi, vitae euismod libero blandit eu. Nullam vitae tempus libero.</p>
 <h3>Unordered List</h3>
