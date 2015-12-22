@@ -1,8 +1,8 @@
 //
-// Component: Category Navigation
+// Component: Navigation Category
 // --------------------------------------------------
 
-.c-category-navigation {
+.c-navigation-category {
   border: 1px solid map-get($colors, base-5);
   border-width: 1px 0;
   margin: 0 0 map-get($spacing, small);
@@ -14,7 +14,7 @@
     text-align: left;
   } // mq.medium
 
-  .c-category-navigation__heading {
+  .c-navigation-category__heading {
     color: map-get($colors, base-1);
     font-family: map-get($fonts, base-1);
     font-size: 1.5em;
@@ -28,9 +28,9 @@
       line-height: 62px;
       margin: 4px 20px 0 map-get($spacing, small);
     } // mq.medium
-  } // .c-category-navigation__heading
+  } // .c-navigation-category__heading
 
-  .c-category-navigation__list {
+  .c-navigation-category__list {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -39,9 +39,9 @@
       @include clearfix();
       float: left;
     } // mq.medium
-  } // .c-category-navigation__list
+  } // .c-navigation-category__list
 
-  .c-category-navigation__list-item {
+  .c-navigation-category__list-item {
     @include transition(background-color .3s linear);
     border-radius: 50%;
     display: inline-block;
@@ -63,30 +63,30 @@
     &.is-active {
       box-shadow: 0 0 20px map-get($colors, base-4);
 
-      .c-category-navigation__link {
+      .c-navigation-category__link {
         border-color: map-get($colors, quality-legendary);
         cursor: default;
-      } // .c-category-navigation__link
+      } // .c-navigation-category__link
     } // &.is-active
 
     &--assassination {
-      .c-category-navigation__link {
+      .c-navigation-category__link {
         background-image: url("../images/icon-rogue-assassination.jpg");
-      } // .c-category-navigation__link
+      } // .c-navigation-category__link
     } // &--assassination
     &--outlaw {
-      .c-category-navigation__link {
+      .c-navigation-category__link {
         background-image: url("../images/icon-rogue-outlaw.jpg");
-      } // .c-category-navigation__link
+      } // .c-navigation-category__link
     } // &--assassination
     &--subtlety {
-      .c-category-navigation__link {
+      .c-navigation-category__link {
         background-image: url("../images/icon-rogue-subtlety.jpg");
-      } // .c-category-navigation__link
+      } // .c-navigation-category__link
     } // &--assassination
-  } // .c-category-navigation__list-item
+  } // .c-navigation-category__list-item
 
-  .c-category-navigation__link {
+  .c-navigation-category__link {
     @extend %u-image-replacement;
     background: transparent no-repeat;
     background-size: cover;
@@ -100,5 +100,5 @@
       height: 56px;
       width: 56px;
     } // mq.medium
-  } // .c-category-navigation__link
-} // .c-category-navigation
+  } // .c-navigation-category__link
+} // .c-navigation-category

@@ -31,7 +31,7 @@ div.fancy-select div.trigger {
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
-  background: #99A5BE;
+  background: map-get($colors, base-4);
   border: 1px solid map-get($colors, base-1);
   color: map-get($colors, base-1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -150,9 +150,5 @@ div.fancy-select ul.options li {
 div.fancy-select ul.options li.selected {
   background: rgba(43,134,134,0.3);
   color: rgba(255,255,255,0.75);
-}
-
-div.fancy-select ul.options li.hover {
-  color: #fff;
 }
 // scss-lint:enable all

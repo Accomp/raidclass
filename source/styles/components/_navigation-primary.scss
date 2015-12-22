@@ -1,0 +1,131 @@
+//
+// Component: Navigation Primary
+// --------------------------------------------------
+
+.c-navigation-primary {
+
+  @include mq(medium) {
+    float: right;
+  } // mq.medium
+
+  .c-navigation-primary__heading {
+    @extend %u-visually-hidden;
+  } // .c-navigation-primary__heading
+
+  .c-navigation-primary__list {
+
+    @include mq-between(mobile) {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    } // mq-between.mobile
+
+    @include mq(medium) {
+      @include clearfix();
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    } // mq.medium
+  } // .c-navigation-primary__list
+
+  .c-navigation-primary__list-item {
+
+    @include mq-between(mobile) {
+      border-left: 5px solid map-get($colors, base-1);
+      border-top: 1px solid map-get($colors, base-1);
+      margin: 0;
+    } // mq-between.mobile
+
+    @include mq(medium) {
+      border-bottom: 5px solid map-get($colors, base-1);
+      border-left: 1px solid map-get($colors, base-5);
+      float: left;
+      margin: 0;
+    } // mq.medium
+
+    &:last-child {
+
+      @include mq-between(mobile) {
+        border-bottom: 1px solid map-get($colors, base-2);
+      } // mq-between.mobile
+
+      @include mq(medium) {
+        border-right: 1px solid map-get($colors, base-2);
+      } // mq.medium
+
+      .c-navigation-primary__link {
+
+        @include mq-between(mobile) {
+          border-bottom: 1px solid map-get($colors, base-1);
+        } // .mq-between.mobile
+      } // .c-navigation-primary__link
+    } // &:last-child
+
+    &.is-current {
+
+      .c-navigation-primary__link {
+        background: lighten(map-get($colors, base-5), 10%);
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0;
+          position: absolute;
+          width: 0;
+
+          @include mq-between(mobile) {
+            border-bottom: 12px solid transparent;
+            border-left: 15px solid map-get($colors, base-1);
+            border-top: 12px solid transparent;
+            left: 0;
+            margin-top: -12px;
+            top: 50%;
+          } // mq-between.mobile
+
+          @include mq(medium) {
+            border-bottom: 10px solid map-get($colors, base-1);
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            bottom: 0;
+            left: 50%;
+            margin-left: -12px;
+          } // mq.medium
+        } // &:after
+      } // .c-navigation-primary__link
+    } // &.is-current
+
+    &.c-navigation-primary__list-item--home {
+
+      @include mq(medium) {
+        display: none;
+      } // mq.medium
+    } // .c-navigation-primary__list-item--home
+  } // .c-navigation-primary__list-item
+
+  .c-navigation-primary__link {
+    @include transition(background-color .4s ease-in-out);
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include mq-between(mobile) {
+      @include transition(background-color .4s ease-in-out);
+      border-top: 1px solid map-get($colors, base-2);
+      color: map-get($colors, base-4);
+      padding: map-get($spacing, small) map-get($spacing, small) 11px;
+      text-align: center;
+    } // mq-between.mobile
+
+    @include mq(medium) {
+      background: map-get($colors, base-5);
+      border-left: 1px solid map-get($colors, base-2);
+      line-height: 54px;
+      padding: 0 (map-get($spacing, small) * 2);
+    } // mq.medium
+
+    &:hover {
+      background: lighten(map-get($colors, base-5), 10%);
+    } // &:hover
+  } // .c-navigation-primary__link
+} // .c-navigation-primary

@@ -14,11 +14,15 @@
 
   .c-profile-control__toggle {
 
+    @include mq-between(mobile) {
+      width: 100%;
+    } // mq-between.mobile
+
     @include mq(medium) {
       @include clearfix();
       background: none;
-      border: 1px solid map-get($colors, base-1);
-      border-width: 0 1px;
+      border: 1px solid map-get($colors, base-5);
+      border-width: 0 0 0 1px;
       color: map-get($colors, white);
       cursor: pointer;
       display: block;

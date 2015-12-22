@@ -3,6 +3,41 @@
 // --------------------------------------------------
 
 .c-sidr {
+
+  @include mq-between(mobile) {
+    background: map-get($colors, base-5);
+    color: map-get($colors, base-4);
+    display: none;
+    height: 100%;
+    overflow-x: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    z-index: 999999;
+  } // mq-between.mobile
+
+  @include mq(medium) {
+    display: inline !important;
+  } // mq.medium
+
+  // scss-lint:disable SelectorFormat
+  &.left {
+
+    @include mq-between(mobile) {
+      left: -260px;
+      right: auto;
+    } // mq-between.mobile
+  } // &.left
+
+  &.right {
+
+    @include mq-between(mobile) {
+      left: auto;
+      right: -260px;
+    } // mq-between.mobile
+  } // &.right
+  // scss-lint:enable SelectorFormat
 } // .c-sidr
 
 .c-sidr__toggle {
@@ -14,6 +49,10 @@
   margin-top: 9px;
   position: relative;
   width: 25px;
+
+  @include mq(medium) {
+    display: none;
+  } // mq.medium
 
   &:before {
     @include transition(transform .4s ease-in-out, top .4s ease-in-out);

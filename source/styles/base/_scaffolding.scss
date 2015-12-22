@@ -16,6 +16,9 @@ body {
 
   @include mq(medium) {
     font-size: 16px;
+    position: relative !important;
+    right: auto !important;
+    width: auto !important;
   } // mq.medium
 }
 

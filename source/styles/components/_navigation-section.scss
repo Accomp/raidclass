@@ -1,8 +1,8 @@
 //
-// Component: Section Navigation
+// Component: Navigation Section
 // --------------------------------------------------
 
-.c-section-navigation {
+.c-navigation-section {
 
   @include mq(medium) {
     background: rgba(map-get($colors, base-5), .9);
@@ -22,7 +22,7 @@
     right: 796px;
   } // mq.large
 
-  .c-section-navigation__logo {
+  .c-navigation-section__logo {
     display: none;
 
     @include mq(medium) {
@@ -35,9 +35,9 @@
       text-align: center;
       text-decoration: none;
     } // mq.medium
-  } // .c-section-navigation__logo
+  } // .c-navigation-section__logo
 
-  .c-section-navigation__class {
+  .c-navigation-section__class {
     border: 1px solid map-get($colors, base-1);
     border-width: 1px 0;
     font-family: map-get($fonts, base-1);
@@ -54,13 +54,13 @@
       margin: 39px map-get($spacing, small) 27px;
       padding-top: 8px;
     } // mq.medium
-  } // .c-section-navigation__class
+  } // .c-navigation-section__class
 
-  .c-section-navigation__class-name {
+  .c-navigation-section__class-name {
     @extend %u-visually-hidden;
-  } // .c-section-navigation__class-name
+  } // .c-navigation-section__class-name
 
-  .c-section-navigation__list {
+  .c-navigation-section__list {
     display: none;
 
     @include mq(medium) {
@@ -69,9 +69,9 @@
       margin: 0;
       padding: 0;
     } // mq.medium
-  } // .c-section-navigation__list
+  } // .c-navigation-section__list
 
-  .c-section-navigation__list-item {
+  .c-navigation-section__list-item {
 
     @include mq(medium) {
       border-left: 5px solid map-get($colors, base-1);
@@ -85,31 +85,17 @@
         border-bottom: 1px solid map-get($colors, base-2);
       } // mq.medium
 
-      .c-section-navigation__link {
+      .c-navigation-section__link {
 
         @include mq(medium) {
           border-bottom: 1px solid map-get($colors, base-1);
         } // .mq-medium
-      } // .c-section-navigation__link
+      } // .c-navigation-section__link
     } // &:last-child
-
-    &--create {
-
-      @include mq(medium) {
-        border-left-color: map-get($colors, accent-1);
-      } // mq.medium
-    } // .&--create
-
-    &--discover {
-
-      @include mq(medium) {
-        border-left-color: map-get($colors, accent-2);
-      } // mq.medium
-    } // .&--discover
 
     &.is-current {
 
-      .c-section-navigation__link {
+      .c-navigation-section__link {
         background: lighten(map-get($colors, base-5), 10%);
         position: relative;
 
@@ -126,11 +112,11 @@
           top: 50%;
           width: 0;
         } // &:after
-      } // .c-section-navigation__link
+      } // .c-navigation-section__link
     } // &.is-current
-  } // .c-section-navigation__list-item
+  } // .c-navigation-section__list-item
 
-  .c-section-navigation__link {
+  .c-navigation-section__link {
 
     @include mq(medium) {
       @include transition(background-color .4s ease-in-out);
@@ -147,9 +133,9 @@
     &:hover {
       background: lighten(map-get($colors, base-5), 10%);
     } // &:hover
-  } // .c-section-navigation__link
+  } // .c-navigation-section__link
 
-  .c-section-navigation__toggle {
+  .c-navigation-section__toggle {
     @extend %u-image-replacement;
     background: map-get($colors, base-5);
     height: 40px;
@@ -162,12 +148,12 @@
     @include mq(medium) {
       display: none;
     } // mq.medium
-  } // .c-section-navigation__toggle
-} // .c-section-navigation
+  } // .c-navigation-section__toggle
+} // .c-navigation-section
 
-.c-section-navigation__select {
+.c-navigation-section__select {
 
   @include mq(medium) {
     display: none;
   } // mq.medium
-} // .c-section-navigation__select
+} // .c-navigation-section__select

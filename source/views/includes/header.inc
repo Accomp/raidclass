@@ -7,12 +7,9 @@
         <h1 class="c-profile-control__heading">Profile control</h1>
         <button class="c-profile-control__toggle">Accomp</button>
       </section><!-- /.c-profile-control -->
-      <nav class="" role="navigation">
-        <ul>
-          <li><a href="" title="">Nav Item</a></li>
-          <li><a href="" title="">Nav Item</a></li>
-        </ul>
-      </nav>
+      
+      <?php include 'includes/navigation-primary.inc' ?>
+
     </div><!-- /.c-sidr -->
   </div><!-- /.u-wrapper -->
 </header><!-- /.l-header -->

@@ -8,6 +8,7 @@
   border-bottom: 1px solid map-get($colors, base-1);
   height: 40px;
   left: 0;
+  min-width: 320px;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -18,11 +19,13 @@
   } // mq.medium
 
   .sidr-open & {
-    left: -260px;
+
+    @include mq-between(mobile) {
+      left: -260px;
+    } // mq-between.mobile
   } // .sidr-open &
 
   .l-header__heading {
-    color: map-get($colors, white);
     float: left;
     font-family: map-get($fonts, base-2);
     font-size: 1.6em;

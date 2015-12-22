@@ -18,7 +18,7 @@
 
 @mixin mq($breakpoint) {
   @if $breakpoint == tiny {
-    @media (min-width: map-get($breakpoints, tiny)) { @content; }
+    @media screen and (min-width: map-get($breakpoints, tiny)) { @content; }
   } @else if $breakpoint == small {
     @media (min-width: map-get($breakpoints, small)) { @content; }
   } @else if $breakpoint == medium {
@@ -27,6 +27,27 @@
     @media (min-width: map-get($breakpoints, large)) { @content; }
   } @else if $breakpoint == huge {
     @media (min-width: map-get($breakpoints, huge)) { @content; }
+  }
+}
+
+
+/// Create media query between horizontal breakpoints
+/// ---
+/// @require {variable} $breakpoints - Breakpoints variable map
+/// @param {String} $breakpoint - Horizontal breakpoint
+/// ---
+/// @example scss - Usage
+///   selector {
+///     @include mq-between("$breakpoint") {
+///       property: value;
+///     }
+///   }
+
+@mixin mq-between($breakpoint) {
+  @if $breakpoint == mobile {
+    @media screen and (min-width: 0) and (max-width: (map-get($breakpoints, medium) - 1)) { @content; }
+  } @else if $breakpoint == tablet {
+    @media screen and (min-width: map-get($breakpoints, medium)) and (max-width: (map-get($breakpoints, large) - 1)) { @content; }
   }
 }
 

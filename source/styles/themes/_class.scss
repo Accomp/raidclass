@@ -6,15 +6,15 @@
 .t-class {
 
   &--rogue {
-    .c-category-navigation__heading {
+    .c-navigation-category__heading {
       color: map-get($colors, class-rogue--dark);
-    } // .c-category-navigation__heading
-    .c-section-navigation__class {
+    } // .c-navigation-category__heading
+    .c-navigation-section__class {
       color: rgba(map-get($colors, class-rogue), .8);
-    } // .c-section-navigation__class
-    .c-category-navigation {
+    } // .c-navigation-section__class
+    .c-navigation-category {
       background-color: rgba(map-get($colors, class-rogue), .8);
-    } // .c-category-navigation
+    } // .c-navigation-category
     .fancy-select {
       .options {
         background: map-get($colors, class-rogue);

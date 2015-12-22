@@ -8,7 +8,6 @@
 @import "vendors/neat/neat";
 @import "vendors/perfect-scrollbar/perfect-scrollbar";
 @import "vendors/fancy-select/fancy-select";
-@import "vendors/sidr/sidr";
 
 
 //
@@ -42,10 +41,11 @@
 // --------------------------------------------------
 
 @import "components/button";
-@import "components/category-navigation";
-@import "components/profile-control";
-@import "components/section-navigation";
 @import "components/banner";
+@import "components/profile-control";
+@import "components/navigation-primary";
+@import "components/navigation-category";
+@import "components/navigation-section";
 @import "components/section";
 @import "components/sidr";
 
