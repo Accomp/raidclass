@@ -1,0 +1,55 @@
+//
+// Component: Sidr
+// --------------------------------------------------
+
+.c-sidr {
+} // .c-sidr
+
+.c-sidr__toggle {
+  @include transition(border-color .4s ease-in-out);
+  border-top: 3px solid map-get($colors, base-4);
+  float: right;
+  font-size: 0;
+  height: 18px;
+  margin-top: 9px;
+  position: relative;
+  width: 25px;
+
+  &:before {
+    @include transition(transform .4s ease-in-out, top .4s ease-in-out);
+    background: map-get($colors, base-4);
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 100%;
+  } // &:before
+
+  &:after {
+    @include transition(transform .4s ease-in-out, top .4s ease-in-out);
+    background: map-get($colors, base-4);
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  } // &:after
+
+  .sidr-open & {
+    border-color: transparent;
+
+    &:before {
+      top: 32%;
+      transform: rotate(45deg);
+    } // &:before
+
+    &:after {
+      top: 32%;
+      transform: rotate(-45deg);
+    } // &:after
+  } // .sidr-open &
+} // .c-sidr__toggle

@@ -17,6 +17,10 @@
     position: absolute;
   } // mq.medium
 
+  .sidr-open & {
+    left: -260px;
+  } // .sidr-open &
+
   .l-header__heading {
     color: map-get($colors, white);
     float: left;

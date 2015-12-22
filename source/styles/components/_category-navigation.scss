@@ -25,7 +25,7 @@
     @include mq(medium) {
       float: left;
       font-size: 1.8em;
-      line-height: 54px;
+      line-height: 62px;
       margin: 4px 20px 0 map-get($spacing, small);
     } // mq.medium
   } // .c-category-navigation__heading
@@ -42,12 +42,12 @@
   } // .c-category-navigation__list
 
   .c-category-navigation__list-item {
-    border: 1px solid map-get($colors, base-1);
+    @include transition(background-color .3s linear);
     border-radius: 50%;
     display: inline-block;
     margin: 0 10px;
+    padding: 5px;
     overflow: hidden;
-    transition: border-color .4s;
 
     @include mq(medium) {
       display: block;
@@ -57,13 +57,14 @@
 
     &:hover,
     &.is-active {
-      border-color: map-get($colors, base-4);
+      background: map-get($colors, base-1);
     } // &:hover
 
     &.is-active {
       box-shadow: 0 0 20px map-get($colors, base-4);
 
       .c-category-navigation__link {
+        border-color: map-get($colors, quality-legendary);
         cursor: default;
       } // .c-category-navigation__link
     } // &.is-active
@@ -89,6 +90,8 @@
     @extend %u-image-replacement;
     background: transparent no-repeat;
     background-size: cover;
+    border: 1px solid map-get($colors, base-1);
+    border-radius: 50%;
     display: block;
     height: 40px;
     width: 40px;

@@ -9,9 +9,9 @@
     .c-category-navigation__heading {
       color: map-get($colors, class-rogue--dark);
     } // .c-category-navigation__heading
-    .c-spec-navigation__class {
+    .c-section-navigation__class {
       color: rgba(map-get($colors, class-rogue), .8);
-    } // .c-spec-navigation__class
+    } // .c-section-navigation__class
     .c-category-navigation {
       background-color: rgba(map-get($colors, class-rogue), .8);
     } // .c-category-navigation

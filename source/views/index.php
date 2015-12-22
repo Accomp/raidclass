@@ -12,15 +12,10 @@
 
         <div class="u-wrapper">
 
-          <?php include 'includes/navigation-spec.inc' ?>
+          <?php include 'includes/section-navigation.inc' ?>
 
-          <section class="c-section c-section--content c-overview">
-            <?php include 'content/overview.php' ?>
-          </section><!-- /.c-section -->
-
-          <section class="c-section c-section--content c-stats">
-            <?php include 'content/stats.php' ?>
-          </section><!-- /.c-section -->
+          <?php include 'content/overview.php' ?>
+          <?php include 'content/stats.php' ?>
 
         </div><!-- /.u-wrapper -->
       </main><!-- /.l-main -->

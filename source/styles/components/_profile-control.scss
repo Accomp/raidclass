@@ -3,25 +3,27 @@
 // --------------------------------------------------
 
 .c-profile-control {
-  float: right;
+
+  @include mq(medium) {
+    float: right;
+  } // mq.medium
 
   .c-profile-control__heading {
     @extend %u-visually-hidden;
   } //.c-profile-control__heading
 
   .c-profile-control__toggle {
-    @include clearfix();
-    background: none;
-    border: 1px solid map-get($colors, base-1);
-    border-width: 0 1px;
-    color: map-get($colors, white);
-    cursor: pointer;
-    display: block;
-    height: 39px;
-    padding: 0 map-get($spacing, small);
 
     @include mq(medium) {
+      @include clearfix();
+      background: none;
+      border: 1px solid map-get($colors, base-1);
+      border-width: 0 1px;
+      color: map-get($colors, white);
+      cursor: pointer;
+      display: block;
       height: 59px;
+      padding: 0 map-get($spacing, small);
     } // mq.medium
   } // .c-profile-control__toggle
 } // .c-profile-control
