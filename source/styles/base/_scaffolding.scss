@@ -6,7 +6,7 @@
 body {
   background: map-get($colors, base-3);
   color: map-get($colors, base-1);
-  font-family: map-get($fonts, base-1);
+  font-family: map-get($fonts, base-2);
   font-size: 14px;
   line-height: 1.3;
   position: relative;
@@ -196,3 +196,7 @@ textarea {
   padding: 10px;
   width: 100%;
 } // textarea
+
+button {
+  font-family: map-get($fonts, base-2);
+} // button

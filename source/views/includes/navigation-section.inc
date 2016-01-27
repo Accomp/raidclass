@@ -1,5 +1,7 @@
 <nav role="navigation" class="c-navigation-section">
-  <a href="" title="" class="c-navigation-section__logo">Raid Class</a>
+  <a href="#" title="" class="c-navigation-section__logo">
+    <img src="images/logo-raidclass.png" alt="Raid Class logo" class="c-navigation-section__logo-image" />
+  </a>
   <h1 class="c-navigation-section__class">Outlaw<span class="c-navigation-section__class-name"> Rogue</span></h1>
   <ul class="c-navigation-section__list">
     <li class="c-navigation-section__list-item c-navigation-section__list-item--overview is-current">
@@ -23,14 +25,11 @@
     <li class="c-navigation-section__list-item c-navigation-section__list-item--macros">
       <a href="" title="" class="c-navigation-section__link">Macros</a>
     </li><!-- /.c-navigation-section__list-item -->
-    <li class="c-navigation-section__list-item c-navigation-section__list-item--bis">
-      <a href="" title="" class="c-navigation-section__link">BiS List</a>
-    </li><!-- /.c-navigation-section__list-item -->
     <li class="c-navigation-section__list-item c-navigation-section__list-item--tips">
       <a href="" title="" class="c-navigation-section__link">Boss Tips</a>
     </li><!-- /.c-navigation-section__list-item -->
-    <li class="c-navigation-section__list-item c-navigation-section__list-item--forum">
-      <a href="" title="" class="c-navigation-section__link">Forum</a>
+    <li class="c-navigation-section__list-item c-navigation-section__list-item--ask">
+      <a href="" title="" class="c-navigation-section__link">Ask a Question</a>
     </li><!-- /.c-navigation-section__list-item -->
   </ul><!-- /.c-navigation-section__list -->
 </nav><!-- /.c-navigation-section -->
@@ -42,7 +41,6 @@
   <option>Glyphs</option>
   <option>Addons</option>
   <option>Macros</option>
-  <option>BiS List</option>
   <option>Boss Tips</option>
   <option>Forum</option>
 </select><!-- /.c-navigation-section__select -->

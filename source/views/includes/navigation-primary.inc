@@ -4,14 +4,14 @@
       <li class="c-navigation-primary__list-item c-navigation-primary__list-item--home">
         <a href="" title="" class="c-navigation-primary__link">Home</a>
       </li><!-- /.c-navigation-primary__list-item -->
+      <li class="c-navigation-primary__list-item c-navigation-primary__list-item--ask">
+        <a href="" title="" class="c-navigation-primary__link">Ask</a>
+      </li><!-- /.c-navigation-primary__list-item -->
       <li class="c-navigation-primary__list-item c-navigation-primary__list-item--blog">
         <a href="" title="" class="c-navigation-primary__link">Blog</a>
-      </li><!-- /.c-navigation-primary__list-item -->
       <li class="c-navigation-primary__list-item c-navigation-primary__list-item--guides is-current">
         <a href="" title="" class="c-navigation-primary__link">Guides</a>
       </li><!-- /.c-navigation-primary__list-item -->
-      <li class="c-navigation-primary__list-item c-navigation-primary__list-item--forums">
-        <a href="" title="" class="c-navigation-primary__link">Forums</a>
       </li><!-- /.c-navigation-primary__list-item -->
     </ul><!-- /.c-navigation-primary__list -->
 </nav><!-- /.c-navigation-primary -->

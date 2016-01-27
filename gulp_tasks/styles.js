@@ -16,7 +16,7 @@ var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var csscomb      = require('gulp-csscomb');
 var combineMq    = require('gulp-combine-mq');
-var minifyCss    = require('gulp-minify-css');
+var cssNano      = require('gulp-cssnano');
 var pkg          = require('../package.json');
 var banner       = '/*! <%= pkg.title %> | <%= moment().format("MMMM Do YYYY, h:mm:ss A") %> */\n';
 
@@ -79,12 +79,7 @@ gulp.task('styles-build', function() {
     .pipe(combineMq())
 
     // Minify CSS
-    .pipe(minifyCss({
-      advanced: false,
-      aggressiveMerging: false,
-      debug: true,
-      mediaMerging: false
-    }))
+    //.pipe(cssnano())
 
     // Add `.min` suffix
     .pipe(rename({

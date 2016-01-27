@@ -14,6 +14,7 @@
 
           <?php include 'includes/navigation-section.inc' ?>
 
+          <?php include 'content/guide-list.php' ?>
           <?php include 'content/overview.php' ?>
           <?php include 'content/stats.php' ?>
 

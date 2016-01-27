@@ -1,0 +1,147 @@
+//
+// Component: Guide List
+// --------------------------------------------------
+
+.c-guide-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .c-guide-list__class {
+    background: map-get($colors, white);
+    border-radius: 3px;
+    margin-bottom: map-get($spacing, small);
+    padding: map-get($spacing, small) 0;
+
+    &--death-knight {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--death-knight
+
+    &--demon-hunter {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(6);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--demon-hunter
+
+    &--druid {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(3);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--druid
+
+    &--hunter {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--hunter
+
+    &--mage {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--mage
+
+    &--monk {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--monk
+
+    &--paladin {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--paladin
+
+    &--priest {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--priest
+
+    &--rogue {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--rogue
+
+    &--shaman {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--shaman
+
+    &--warlock {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--warlock
+
+    &--warrior {
+
+      .c-guide-list__spec {
+        @include mq(medium) {
+          @include span-columns(4);
+        } // mq.medium
+      } // .c-guide-list__spec
+    } // &--warrior
+  } // .c-guide-list__class
+
+  .c-guide-list__class-heading {
+    text-align: center;
+
+    &:after {
+      display: none;
+    } // &:after
+  } // .c-guide-list__class-heading
+
+  .c-guide-list__spec-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include mq(medium) {
+      @include outer-container;
+    } // mq.medium
+  } // .c-guide-list__spec-list
+
+  .c-guide-list__spec {
+    padding: map-get($spacing, small);
+    text-align: center;
+  } // .c-guide-list__spec
+} // .c-guide-list

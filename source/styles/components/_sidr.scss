@@ -41,7 +41,6 @@
 } // .c-sidr
 
 .c-sidr__toggle {
-  @include transition(border-color .4s ease-in-out);
   border-top: 3px solid map-get($colors, base-4);
   float: right;
   font-size: 0;
