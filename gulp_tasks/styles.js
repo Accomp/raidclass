@@ -25,7 +25,7 @@ gulp.task('styles', function(cb) {
 
   // Run tasks synchronously
   return runSequence(
-    [ 'styles-lint' ],
+    //[ 'styles-lint' ],
     [ 'styles-build' ],
     cb
   );

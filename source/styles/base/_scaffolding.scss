@@ -200,3 +200,7 @@ textarea {
 button {
   font-family: map-get($fonts, base-2);
 } // button
+
+address {
+  display: inline;
+} // address

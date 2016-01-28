@@ -1,5 +1,5 @@
 <section class="c-section c-section--guides">
-  <h1>Select a Class Guide</h1>
+  <h1>Select a Class Spec Guide</h1>
   <ul class="c-guide-list">
   	<li class="c-guide-list__class c-guide-list__class--death-knight">
   		<h2 class="c-guide-list__class-heading">Death Knight</h2>

@@ -42,5 +42,5 @@
   <option>Addons</option>
   <option>Macros</option>
   <option>Boss Tips</option>
-  <option>Forum</option>
+  <option>Ask a Question</option>
 </select><!-- /.c-navigation-section__select -->
