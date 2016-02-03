@@ -1,5 +1,10 @@
 <section class="c-section c-section--content c-stats">
   <h1>Stat Priority for Outlaw Rogue</h1>
+  <div class="c-section__feature">
+    <div class="c-section__feature-inner">
+      <img src="https://unsplash.it/754/250" alt="" />
+    </div><!-- /.c-section__feature-inner -->
+  </div><!-- /.c-section__feature -->
   <p>Below are stat priorities for the Outlaw Rogue in a PvE raid setting. While these are a standard recommendation, please note: stat weights dynamically change based on your gear. We always recommend checking <a href="http://shadowcraft.mmo-mumble.com" title="Visit Shadowcraft, Rogue DPS Calculator">Shadowcraft</a> for the most precise stat recommendations.</p>
   <h2>Stat Priority</h2>
   <ol class="c-stats__list">

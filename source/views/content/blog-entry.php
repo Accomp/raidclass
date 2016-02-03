@@ -1,13 +1,13 @@
 <article class="c-section c-section--content c-blog-entry">
-  <h1 class="c-blog-entry__heading">Blog Post</h1>
+  <h1 class="c-section__heading">Blog Post</h1>
   <div class="c-blog-entry__meta">
   	<time datetime="">Jan 27, 2016</time> by <address><a rel="author" href="" class="c-blog-entry__meta-author">Accomp</a></address> under <a href="" title="" class="c-blog-entry__meta-category">Rogue</a>.
   </div><!-- /.c-blog-entry__meta -->
-  <div class="c-blog-entry__image">
-  	<div class="c-blog-entry__image-inner">
+  <div class="c-section__feature">
+  	<div class="c-section__feature-inner">
   		<img src="https://unsplash.it/754/250" alt="" />
-  	</div><!-- /.c-blog-entry__image-inner -->
-  </div><!-- /.c-blog-entry__image -->
+  	</div><!-- /.c-section__feature-inner -->
+  </div><!-- /.c-section__feature -->
   <div class="c-blog-entry__connected">
   	Stay connected. Follow Raid Class!
   </div><!-- /.c-blog-entry__connected  -->

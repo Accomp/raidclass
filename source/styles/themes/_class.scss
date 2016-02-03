@@ -39,6 +39,10 @@
           color: map-get($colors, class-rogue);
         } // &:hover
       } // a
+
+      .c-section__feature-overlay {
+        background-color: rgba(map-get($colors, class-rogue), 0.3);
+      } // .c-section__feature-overlay
     } // .c-section
   } // .&--rogue
 } // .t-class
