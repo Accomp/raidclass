@@ -12,4 +12,9 @@
   .c-section__feature-overlay {
   	background: none !important;
   } // .c-section__feature-overlay
+
+  .c-blog-entry__author {
+  	border-top: 3px solid map-get($colors, base-5);
+  	padding: map-get($spacing, small) 0;
+  } // .c-blog-entry__author
 } // .c-blog-entry

@@ -18,8 +18,8 @@
   <h3>This is a Heading 3</h3>
   <p>And some more content that probably isn't even accurate. Because things and reasons, you know the generic stuff. Don't talk shit about total. And some more content that probably isn't even accurate. Because things and reasons, you know the generic stuff. Don't talk shit about total. And some more content that probably isn't even accurate. Because things and reasons, you know the generic stuff. Don't talk shit about total. And some more content that probably isn't even accurate. Because things and reasons, you know the generic stuff. Don't talk shit about total. </p>
   <footer class="c-blog-entry__author">
-  	<h1>About the Author</h1>
-  	<img src="" alt="" class="" />
-  	<p>Accomp is a person who does things and writes things. He breathes Oxygen.</p>
+  	<h2 class="c-blog-entry__author-heading">About the Author</h1>
+  	<img src="" alt="" class="c-blog-entry__author-image" />
+  	<p class="c-blog-entry__author-bio">Accomp is a person who does things and writes things. He breathes Oxygen.</p>
   </footer><!-- /.c-blog-entry__author -->
 </article><!-- /.c-blog-entry -->

@@ -7,17 +7,17 @@
     <li class="c-navigation-section__list-item c-navigation-section__list-item--overview is-current">
       <a href="" title="" class="c-navigation-section__link">Overview</a>
     </li><!-- /.c-navigation-section__list-item -->
-    <li class="c-navigation-section__list-item c-navigation-section__list-item--stats">
-      <a href="" title="" class="c-navigation-section__link">Stat Priority</a>
-    </li><!-- /.c-navigation-section__list-item -->
     <li class="c-navigation-section__list-item c-navigation-section__list-item--rotation">
       <a href="" title="" class="c-navigation-section__link">Rotation</a>
+    </li><!-- /.c-navigation-section__list-item -->
+    <li class="c-navigation-section__list-item c-navigation-section__list-item--stats">
+      <a href="" title="" class="c-navigation-section__link">Stat Priority</a>
     </li><!-- /.c-navigation-section__list-item -->
     <li class="c-navigation-section__list-item c-navigation-section__list-item--talents">
       <a href="" title="" class="c-navigation-section__link">Talents</a>
     </li><!-- /.c-navigation-section__list-item -->
-    <li class="c-navigation-section__list-item c-navigation-section__list-item--glyphs">
-      <a href="" title="" class="c-navigation-section__link">Glyphs</a>
+    <li class="c-navigation-section__list-item c-navigation-section__list-item--artifact">
+      <a href="" title="" class="c-navigation-section__link">Artifact</a>
     </li><!-- /.c-navigation-section__list-item -->
     <li class="c-navigation-section__list-item c-navigation-section__list-item--addons">
       <a href="" title="" class="c-navigation-section__link">Addons</a>
