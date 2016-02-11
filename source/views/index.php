@@ -17,8 +17,8 @@
           <?php include 'content/questions-list.php' ?>
           <?php include 'content/blog-entry.php' ?>
           <?php include 'content/guide-list.php' ?>
-          <?php include 'content/overview.php' ?>
           <?php include 'content/stats.php' ?>
+          <?php include 'content/overview.php' ?>
 
         </div><!-- /.u-wrapper -->
       </main><!-- /.l-main -->

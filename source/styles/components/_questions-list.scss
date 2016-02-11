@@ -4,4 +4,49 @@
 
 .c-questions-list {
 
+	.c-questions-list__list {
+		border: 1px solid map-get($colors, base-5);
+		border-width: 1px 0;
+		margin-left: -(map-get($spacing, small));
+		margin-right: -(map-get($spacing, small));
+		list-style: none;
+		padding: 0;
+	} // .c-questions-list__list
+
+	.c-questions-list__list-item {
+		border-bottom: 1px solid map-get($colors, base-4);
+		margin: 0;
+
+		&:nth-child(odd) {
+
+			.c-questions-list__link {
+				background-color: map-get($colors, white--dark);
+			} // .c-questions-list__link
+		} // &:nth-child(odd)
+
+		&:last-child {
+			border-bottom: 0;
+		} // &:last-child
+	} // .c-questions-list__list-item
+
+	.c-questions-list__link {
+		display: block;
+		padding: map-get($spacing, small);
+	} // .c-questions-list__link
+
+	.c-questions-list__pagination-results {
+		margin: 0;
+		text-align: center;
+	} // .c-questions-list__pagination-results
+
+	.c-questions-list__pagination-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	} // .c-questions-list__pagination-list
+
+	.c-questions-list__pagination-list-item {
+		display: inline-block;
+	} // .c-questions-list__pagination-list-item
 } // .c-questions-list
