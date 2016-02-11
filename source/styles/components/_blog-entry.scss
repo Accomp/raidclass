@@ -8,4 +8,8 @@
     background: map-get($colors, base-4);
     padding: (map-get($spacing, small)/2) map-get($spacing, small);
   } // .c-blog-entry__connected
+
+  .c-section__feature-overlay {
+  	background: none !important;
+  } // .c-section__feature-overlay
 } // .c-blog-entry

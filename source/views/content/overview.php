@@ -2,7 +2,8 @@
   <h1>Overview for Outlaw Rogue</h1>
   <div class="c-section__feature">
     <div class="c-section__feature-inner">
-      <img src="https://unsplash.it/754/250" alt="" />
+      <img src="https://unsplash.it/g/754/250" alt="" />
+      <span class="c-section__feature-overlay"></span>
     </div><!-- /.c-section__feature-inner -->
   </div><!-- /.c-section__feature -->
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam libero, fringilla at ipsum vitae, tempus elementum leo. Nulla quis dui a urna vulputate iaculis. Cras ut diam nunc. Duis feugiat id arcu in dictum. Curabitur tincidunt neque molestie, interdum turpis eu, lacinia metus. Quisque sed neque risus. Pellentesque condimentum scelerisque libero, id porttitor tellus iaculis in.</p>

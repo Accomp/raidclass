@@ -32,7 +32,6 @@
   } //.c-section__heading
 
   .c-section__feature {
-    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,.8), inset 0 -20px 20px -20px rgba(0,0,0,.8);
     margin: 1em 0;
     position: relative;
 
@@ -92,6 +91,7 @@
 
   .c-section__feature-overlay {
     bottom: 0;
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,.8), inset 0 -20px 20px -20px rgba(0,0,0,.8);
     display: block;
     left: 0;
     position: absolute;

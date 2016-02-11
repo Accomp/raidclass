@@ -6,6 +6,7 @@
   <div class="c-section__feature">
   	<div class="c-section__feature-inner">
   		<img src="https://unsplash.it/754/250" alt="" />
+      <span class="c-section__feature-overlay"></span>
   	</div><!-- /.c-section__feature-inner -->
   </div><!-- /.c-section__feature -->
   <div class="c-blog-entry__connected">
