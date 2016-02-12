@@ -11,7 +11,6 @@ keystone.init({
   'views': 'templates/views',
   'view engine': 'jade',
 
-
   'auto update' : true,
   'mongo' : 'mongodb://localhost/raidclass-dev',
 
