@@ -3,15 +3,17 @@ keystone.init({
 
   'name' : 'raidclass',
   // Need to look at what the build output structure looks like (need to switch to macos env)
-  'favicon' : '',
-  'less' : '',
-  'static' : [],
 
-  'views' : '',
-  'view engine' : 'jade', // Look at options and change
+  'favicon': 'public/favicon.ico',
+  'less': 'source',
+  'static': 'source',
+
+  'views': 'templates/views',
+  'view engine': 'jade',
+
 
   'auto update' : true,
-  'mongo' : '', // TODO: Stand an instance up locally on dev pi.
+  'mongo' : 'mongodb://localhost/raidclass-dev',
 
   'session' : true,
   'auth' : true,
