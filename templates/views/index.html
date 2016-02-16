@@ -1,32 +1,32 @@
-<?php include 'includes/header.php' ?>
-  <body class="p-guide t-class--rogue">
+{% include "includes/head.html" %}
+<body class="p-guide t-class--rogue">
     <a href="#main" class="u-skip-to-content">Skip to content</a>
     <div class="u-site-wrapper">
-      
-      <?php include 'includes/header.inc' ?>
+        {% include "includes/header.html" %}
+        <main role="main" class="l-main" id="main">
+            {% include "includes/navigation-category.html" %}
+            <div class="u-wrapper">
+                {% include "includes/navigation-section.html" %}
+                {% include "content/questions-list.html" %} 
+                {% include "content/blog-entry.html" %}
+                {% include "content/guide-list.html" %}
+                {% include "content/stats.html" %}
+                {% include "content/overview.html" %}
+            </div>
+            <!-- /.u-wrapper -->
+        </main>
+        <!-- /.l-main -->
 
-      <main role="main" class="l-main" id="main">
-        
-        <?php include 'includes/navigation-category.inc' ?>
+        {% include "includes/footer.html" %}
 
-        <div class="u-wrapper">
-
-          <?php include 'includes/navigation-section.inc' ?>
-
-          <?php include 'content/questions-list.php' ?>
-          <?php include 'content/blog-entry.php' ?>
-          <?php include 'content/guide-list.php' ?>
-          <?php include 'content/stats.php' ?>
-          <?php include 'content/overview.php' ?>
-
-        </div><!-- /.u-wrapper -->
-      </main><!-- /.l-main -->
-
-      <?php include 'includes/footer.inc' ?>
-
-    </div><!-- /.u-site-wrapper -->
+    </div>
+    <!-- /.u-site-wrapper -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
     <script src="scripts/main.js"></script>
-  </body><!-- /.p-guide -->
+</body>
+<!-- /.p-guide -->
+
 </html>

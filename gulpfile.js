@@ -12,7 +12,7 @@ var paths = {
 
 ,
 	'style': {
-		all: './public/styles/**/*.scss',
+		all: './source/styles/main.scss',
 		output: './public/styles/'
 	}
 
