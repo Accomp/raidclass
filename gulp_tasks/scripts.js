@@ -22,7 +22,7 @@ var banner       = '/*! <%= pkg.title %> | <%= moment().format("MMMM Do YYYY, h:
 // Task
 gulp.task('scripts', function() {
 
-  return gulp.src('./source/scripts/*.js')
+  return gulp.src('./source/scripts/main.js')
 
     // Include JS
     // Similar to Sass `@import`
@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
     }))
 
     // Save uncompressed JS
-    .pipe(gulp.dest('./build/scripts/'))
+    .pipe(gulp.dest('./public/scripts/'))
 
     // Minify JS
     .pipe(uglify({
@@ -57,5 +57,5 @@ gulp.task('scripts', function() {
     }))
 
     // Save compressed JS
-    .pipe(gulp.dest('./build/scripts/'));
+    .pipe(gulp.dest('./public/scripts/'));
 });

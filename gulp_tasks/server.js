@@ -12,30 +12,12 @@ var browserSync = require('browser-sync');
 var path        = require('path');
 var url         = require('url');
 var fs          = require('fs');
+var shell       = require('gulp-shell')
+
+gulp.task('runKeystone', shell.task('node keystone.js'));
 
 // Task
 gulp.task('server', function() {
-
-  // Start BrowserSync server
-  browserSync({
-    notify: false,
-    port: 8000,
-    open: 'local',
-    server: {
-      baseDir: './build/',
-      middleware: function (req, res, cb) {
-        var uri = url.parse(req.url);
-
-        if (uri.pathname.length > 1 &&
-          path.extname(uri.pathname) === '' &&
-          fs.existsSync('./build' + uri.pathname + '.html')) {
-          req.url = uri.pathname + '.html' + (uri.search || '');
-        }
-
-        cb();
-      }
-    }
-  });
 
   // Watch for file changes
   gulp.watch('source/data/**/*', [ 'data' ]);
@@ -47,10 +29,6 @@ gulp.task('server', function() {
   gulp.watch('source/styles/**/*', [ 'styles' ]);
   gulp.watch('source/vendors/**/*', [ 'vendors' ]);
   gulp.watch('source/views/**/*', [ 'views' ]);
-
-  // Reload BrowserSync when build updates
-  gulp.watch([ 'build/**/*', '!build/docs/**/*' ], function(file) {
-    browserSync.reload(path.relative(__dirname, file.path));
-  });
-
+  
+  gulp.start('runKeystone');
 });

@@ -32,6 +32,6 @@ gulp.task('views', function() {
     */
 
     // Save optimized HTML
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./public/'));
 
 });

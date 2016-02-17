@@ -21,19 +21,7 @@ var options = minimist(process.argv.slice(2), {
 });
 
 // Task
-gulp.task('assets', function(cb) {
-
-  // Run tasks synchronously
-  return runSequence(
-    [ 'data' ],
-    [ 'fonts' ],
-    [ 'images' ],
-    [ 'media' ],
-    [ 'misc' ],
-    [ 'vendors' ],
-    cb
-  );
-});
+gulp.task('assets', ['data', 'fonts', 'images', 'media', 'vendors']);
 
 // Data
 gulp.task('data', function() {
@@ -41,7 +29,7 @@ gulp.task('data', function() {
   return gulp.src('./source/data/**/*')
 
     // Copy data
-    .pipe(copy('./build/', {
+    .pipe(copy('./public/', {
       prefix: 1
     }));
 
@@ -53,7 +41,7 @@ gulp.task('fonts', function() {
   return gulp.src('./source/fonts/**/*')
 
     // Copy fonts
-    .pipe(copy('./build/', {
+    .pipe(copy('./public/', {
       prefix: 1
     }));
 
@@ -74,7 +62,7 @@ gulp.task('images', function () {
     }))
 
     // Save optimized images
-    .pipe(gulp.dest('./build/images/'));
+    .pipe(gulp.dest('./public/images/'));
 
 });
 
@@ -84,25 +72,8 @@ gulp.task('media', function() {
   return gulp.src('./source/media/**/*')
 
     // Copy media
-    .pipe(copy('./build/', {
+    .pipe(copy('./public/', {
       prefix: 1
-    }));
-
-});
-
-// Misc
-gulp.task('misc', function() {
-
-  return gulp.src([
-      './source/misc/' + options.env + '/**/*',
-      './source/misc/all/**/*'
-    ], {
-      dot: true
-    })
-
-    // Copy miscellaneous files
-    .pipe(copy('./build/', {
-      prefix: 3
     }));
 
 });
@@ -113,7 +84,7 @@ gulp.task('vendors', function() {
   return gulp.src('./source/vendors/**/*')
 
   // Copy vendors
-    .pipe(copy('./build/', {
+    .pipe(copy('./public/', {
       prefix: 1
     }));
 

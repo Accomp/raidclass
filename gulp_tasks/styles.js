@@ -21,15 +21,7 @@ var pkg          = require('../package.json');
 var banner       = '/*! <%= pkg.title %> | <%= moment().format("MMMM Do YYYY, h:mm:ss A") %> */\n';
 
 // Task
-gulp.task('styles', function(cb) {
-
-  // Run tasks synchronously
-  return runSequence(
-    //[ 'styles-lint' ],
-    [ 'styles-build' ],
-    cb
-  );
-});
+gulp.task('styles', ['styles-build']);
 
 // Lint Sass
 gulp.task('styles-lint', function() {
@@ -73,7 +65,7 @@ gulp.task('styles-build', function() {
     }))
 
     // Save expanded CSS
-    .pipe(gulp.dest('./build/styles/'))
+    .pipe(gulp.dest('./public/styles/'))
 
     // Combine Media Queries
     .pipe(combineMq())
@@ -87,6 +79,6 @@ gulp.task('styles-build', function() {
     }))
 
     // Save compressed CSS
-    .pipe(gulp.dest('./build/styles/'));
+    .pipe(gulp.dest('./public/styles/'));
 
 });
