@@ -35,7 +35,8 @@
     "underscore": "^1.8.3",
     "node-sass": "^3.3.2",
     "node-sass-middleware": "^0.9.7",
-    "dotenv": "^1.1.0"
+    "dotenv": "^1.1.0",
+    "swig": "^1.4.2"
   },
   "devDependencies": {
     "browser-sync": "^2.7.12",
@@ -70,7 +71,6 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
     "sassdoc": "^2.1.13",
-    "sassdoc-theme-neat": "0.0.2",
-    "swig": "^1.4.2"
+    "sassdoc-theme-neat": "0.0.2"    
   }
 }
