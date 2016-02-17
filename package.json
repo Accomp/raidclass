@@ -29,6 +29,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "consolidate": "^0.14.0",
     "keystone": "^0.3.16",
     "async": "^1.5.0",
     "underscore": "^1.8.3",
