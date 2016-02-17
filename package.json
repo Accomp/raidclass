@@ -9,6 +9,10 @@
     "name": "Eric 'Accomp' Taylor",
     "url": "http://www.twitter.com/Accomp"
   },
+  "scripts": {
+    "start": "node keystone.js",
+    "postinstall": "gulp build"
+  },
   "contributors": [
     {
       "name": "Eric Taylor",
