@@ -1,5 +1,6 @@
 {% extends 'layouts/layout.html' %}
 
 {% block content %}
-{% include 'content/overview.html' %}
+{{ wow_class }} {{ spec }}
+{% include 'content/guide-list.html' %}
 {% endblock %}

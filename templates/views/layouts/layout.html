@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Raid Class</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round|Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script>
+    <script>
+        var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }
+    </script>
+</head>
+
+<body class="p-guide t-class--rogue">
+    <a href="#main" class="u-skip-to-content">Skip to content</a>
+    <div class="u-site-wrapper">
+        {% include "../includes/header.html" %}
+        <main role="main" class="l-main" id="main">
+            {% include "../includes/navigation-category.html" %}
+            <div class="u-wrapper">
+                {% block content %}{% endblock %}
+            </div>
+            <!-- /.u-wrapper -->
+        </main>
+        <!-- /.l-main -->
+
+        {% include "../includes/footer.html" %}
+    </div>
+    <!-- /.u-site-wrapper -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="/scripts/main.js"></script>
+</body>
+<!-- /.p-guide -->
+
+</html>
